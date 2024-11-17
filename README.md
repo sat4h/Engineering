@@ -28,3 +28,41 @@ $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nor
    * [ms-vscode-remote.vscode-remote-extensionpack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
    * [ms-azuretools.vscode-docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 
+3. Клонирование репозитория. Склонировал себе [репозиторий](https://github.com/ssau-data-engineering/Prerequisites.git ) в заранее созданную папку GitHere.
+
+ ```
+git clone https://github.com/ssau-data-engineering/Prerequisites.git 
+ ```
+4. Далее, перед запуском контейнеров, была выполнена последовательнось команд:
+
+    ```bash
+    docker network create data-engineering-labs-network
+    ```
+
+Выполнить следующую команду, подготавливающую к запуску **Apache airflow**
+
+    ```bash
+    docker compose -f docker-compose.airflow.yaml up airflow-init
+    ```
+
+Для запуска, `airflow` `nifi` `elasticsearch` `posgresql` `mlflow` используются следующие, соответственно, команды.
+
+    ```bash
+    docker compose -f docker-compose.airflow.yaml up --build -d
+    ```    
+    
+    ```bash
+    docker compose -f docker-compose.nifi.yaml up --build -d
+    ```    
+    
+    ```bash
+    docker compose -f docker-compose.elasticsearch.yaml up --build -d
+    ```    
+    
+    ```bash
+    docker compose -f docker-compose.postgresql.yaml up --build -d
+    ```
+
+    ```bash
+    docker compose -f docker-compose.mlflow.yaml up --build -d
+    ```
