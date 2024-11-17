@@ -48,7 +48,7 @@ git clone https://github.com/ssau-data-engineering/Prerequisites.git
 Для запуска, `airflow` `nifi` `elasticsearch` `posgresql` `mlflow` используются следующие, соответственно, команды.
 
     
-    docker compose -f docker-compose.airflow.yaml up --build -d
+docker compose -f docker-compose.airflow.yaml up --build -d
         
     
     
