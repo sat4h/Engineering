@@ -41,9 +41,9 @@ git clone https://github.com/ssau-data-engineering/Prerequisites.git
 
 Выполнить следующую команду, подготавливающую к запуску **Apache airflow**
 
-    ```
+    
     docker compose -f docker-compose.airflow.yaml up airflow-init
-    ```
+    
 
 Для запуска, `airflow` `nifi` `elasticsearch` `posgresql` `mlflow` используются следующие, соответственно, команды.
 
