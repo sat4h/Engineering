@@ -21,3 +21,10 @@ $ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linu
  ```
 $ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
  ```
+2. Для работы был выбран [VS Code](https://code.visualstudio.com/insiders/). Затем была проведена настройка, установка требуемых расширений для работы:
+
+   * [ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+   * [ms-toolsai.jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+   * [ms-vscode-remote.vscode-remote-extensionpack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+   * [ms-azuretools.vscode-docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+
