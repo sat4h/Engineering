@@ -35,7 +35,7 @@ git clone https://github.com/ssau-data-engineering/Prerequisites.git
  ```
 4. Далее, перед запуском контейнеров, была выполнена последовательнось команд:
 
-    ```bash
+    ```
     docker network create data-engineering-labs-network
     ```
 
