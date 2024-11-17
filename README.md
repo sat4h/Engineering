@@ -67,3 +67,9 @@ git clone https://github.com/ssau-data-engineering/Prerequisites.git
 ```bash
     docker compose -f docker-compose.mlflow.yaml up --build -d
 ```
+
+5. Запущенные контейнеры в Docker
+
+![image](https://github.com/user-attachments/assets/41eaed57-c69b-4a4a-aa2f-3ba4910b417f)
+
+   
