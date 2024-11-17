@@ -41,28 +41,28 @@ git clone https://github.com/ssau-data-engineering/Prerequisites.git
 
 Выполнить следующую команду, подготавливающую к запуску **Apache airflow**
 
-    ```bash
+    ```
     docker compose -f docker-compose.airflow.yaml up airflow-init
     ```
 
 Для запуска, `airflow` `nifi` `elasticsearch` `posgresql` `mlflow` используются следующие, соответственно, команды.
 
-    ```bash
+    ```
     docker compose -f docker-compose.airflow.yaml up --build -d
     ```    
     
-    ```bash
+    ```
     docker compose -f docker-compose.nifi.yaml up --build -d
     ```    
     
-    ```bash
+    ```
     docker compose -f docker-compose.elasticsearch.yaml up --build -d
     ```    
     
-    ```bash
+    ```
     docker compose -f docker-compose.postgresql.yaml up --build -d
     ```
 
-    ```bash
+    ```
     docker compose -f docker-compose.mlflow.yaml up --build -d
     ```
