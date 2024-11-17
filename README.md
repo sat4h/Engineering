@@ -40,13 +40,13 @@ git clone https://github.com/ssau-data-engineering/Prerequisites.git
     docker network create data-engineering-labs-network
 ```
 
-3. Выполнить следующую команду, подготавливающую к запуску **Apache airflow**
+Подготавливка к запуску **Apache airflow**
 
 ```bash
     docker compose -f docker-compose.airflow.yaml up airflow-init
 ```
 
-4. Для запуска, `airflow` `nifi` `elasticsearch` `posgresql` `mlflow` используются следующие, соответственно, команды.
+Для запуска, `airflow` `nifi` `elasticsearch` `posgresql` `mlflow` использовались следующие, соответственно, команды.
 
 ```bash
     docker compose -f docker-compose.airflow.yaml up --build -d
